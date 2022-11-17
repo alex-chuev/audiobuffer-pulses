@@ -1,0 +1,7 @@
+.editorconfig
+.gitignore
+.prettierrc.json
+index.ts
+package-lock.json
+test.ts
+tsconfig.json
