@@ -1,6 +1,6 @@
 {
   "name": "audiobuffer-pulses",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generates desired number of decibel pulses from raw PCM data",
   "main": "index.js",
   "types": "index.d.ts",
