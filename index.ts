@@ -46,7 +46,7 @@ export function getAudioBufferPulses({
   energies.forEach((energy, index) => {
     const rootMeanSquare = Math.sqrt(energy / ceilStep / numberOfChannels)
     const decibels = rootMeanSquare ? 20 * log10(rootMeanSquare) : minDecibels
-    const scaledValue = (decibels - rootMeanSquare) * rangeScaleFactor
+    const scaledValue = (decibels - minDecibels) * rangeScaleFactor
 
     destination[index] = scaledValue > 1 ? 1 : scaledValue < 0 ? 0 : scaledValue
   })
