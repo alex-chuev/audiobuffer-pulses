@@ -30,7 +30,7 @@ export function getAudioBufferPulses({
   const { numberOfChannels } = audioBuffer
 
   for (let c = 0; c < numberOfChannels; c++) {
-    const data = audioBuffer.getChannelData(0)
+    const data = audioBuffer.getChannelData(c)
 
     for (let i = 0; i < length; i++) {
       const from = Math.floor(i * step)
